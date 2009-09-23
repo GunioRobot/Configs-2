@@ -1,0 +1,25 @@
+[user]
+	email = martinom@ifi.uio.no
+	name  = Martin Øinæs Myrseth
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+[color "branch"]
+        current = yellow reverse
+        local = yellow 
+        remote = green
+[color "diff"]
+        meta = yellow bold
+        frag = magenta bold
+        old = red bold
+        new = green bold
+[color "status"]
+        added = yellow
+        changed = green
+        untracked = cyan
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+    br = branch
