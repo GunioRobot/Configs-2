@@ -61,6 +61,9 @@ aterm*color15:       white
 !   U R X V T - Setting
 !
 !
+urxvt*perl-ext-common:   default,matcher
+urxvt*matcher.button:    3
+urxvt*urlLauncher:       x-www-browser
 urxvt*scrollBar:         true
 urxvt*scrollstyle:       plain
 urxvt*scrollColor:       #555555
