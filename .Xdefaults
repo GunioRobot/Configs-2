@@ -62,7 +62,7 @@ aterm*color15:       white
 !
 !
 urxvt*perl-ext-common:   default,matcher
-urxvt*matcher.button:    3
+urxvt*matcher.button:    1
 urxvt*urlLauncher:       x-www-browser
 urxvt*scrollBar:         true
 urxvt*scrollstyle:       plain
