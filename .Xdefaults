@@ -1,0 +1,155 @@
+!-------------------------------------------------------------------------------
+!
+!   A T E R M - Setting
+!
+!
+aterm*termName: rxvt
+aterm*foreground: gray84
+aterm*background: gray10
+aterm*shading: 40
+aterm*transparent: true
+aterm*cursorColor: yellow
+aterm*font: neep-alt-9
+aterm*font1: neep-alt-8
+aterm*font2: neep-alt-10
+aterm*font3: neep-alt-12
+aterm*font4: neep-alt-14
+aterm*boldFont: neep-alt-9
+aterm*scrollBar: false
+aterm*borderColor: #15191e
+aterm*borderWidth: 5
+aterm*saveLines: 5000
+
+! Aterm colors
+! black
+aterm*color0:        black
+aterm*color8:        gray45
+
+! red
+aterm*color1:        #98565e
+aterm*color9:        #cfa3a9
+
+! green
+aterm*color2:        #66825d
+aterm*color10:       #caf7bb
+
+! yellow
+aterm*color3:        #969176
+aterm*color11:       #fff8bc
+
+! blue
+#aterm*color4:        #4d6585
+#aterm*color12:       #83a3be
+aterm*color4:         #83a3be
+aterm*color12:        #cedeeb
+
+! magenta
+aterm*color5:        #967395
+aterm*color13:       #bba9cf
+
+! cyan
+aterm*color6:        #5f7f7b
+aterm*color14:       #96cccc
+
+! white
+aterm*color7:        gray70
+aterm*color15:       white
+
+
+!-------------------------------------------------------------------------------
+!
+!   U R X V T - Setting
+!
+!
+urxvt*scrollBar:         true
+urxvt*scrollstyle:       plain
+urxvt*scrollColor:       #555555
+urxvt*scrollTtyOutput:   true
+urxvt*scrollTtyKeypress: true
+urxvt*loginShell:        true
+urxvt*font:              xft:Bitstream Vera Sans mono:size=9
+urxvt*foreground:        #cccccc
+urxvt*background:        #191911
+urxvt*saveLines:         10000
+urxvt*inheritPixmap:     true
+urxvt*tintColor:         #aaaaaa
+urxvt*shading:           40
+urxvt*geometry:          84x26
+
+*color0:            #222222
+*color8:            #222222
+*color1:            #803232
+*color9:            #982b2b
+*color2:            #5b762f
+*color10:           #89b83f
+*color3:            #aa9943
+*color11:           #efef60
+*color4:            #324c80
+*color12:           #2b4f98
+*color5:            #706c9a
+*color13:           #826ab1
+*color6:            #92b19e
+*color14:           #a1cdcd
+*color7:            #ffffff
+*color15:           #dedede
+
+!-------------------------------------------------------------------------------
+!
+!   X C A L C - Setting
+!
+!
+xcalc*geometry: 200x275
+xcalc.ti.bevel.background: #111111
+xcalc.ti.bevel.screen.background: #000000
+xcalc.ti.bevel.screen.DEG.background: #000000
+xcalc.ti.bevel.screen.DEG.foreground: LightSeaGreen
+xcalc.ti.bevel.screen.GRAD.background: #000000
+xcalc.ti.bevel.screen.GRAD.foreground: LightSeaGreen
+xcalc.ti.bevel.screen.RAD.background: #000000
+xcalc.ti.bevel.screen.RAD.foreground: LightSeaGreen
+xcalc.ti.bevel.screen.INV.background: #000000
+xcalc.ti.bevel.screen.INV.foreground: Red
+xcalc.ti.bevel.screen.LCD.background: #000000
+xcalc.ti.bevel.screen.LCD.foreground: LightSeaGreen
+xcalc.ti.bevel.screen.LCD.shadowWidth: 0
+xcalc.ti.bevel.screen.M.background: #000000
+xcalc.ti.bevel.screen.M.foreground: LightSeaGreen
+xcalc.ti.bevel.screen.P.background: #000000
+xcalc.ti.bevel.screen.P.foreground: Yellow
+xcalc.ti.Command.foreground: White
+xcalc.ti.Command.background: #777777
+xcalc.ti.button5.background: Orange3
+xcalc.ti.button19.background: #611161
+xcalc.ti.button18.background: #611161
+xcalc.ti.button20.background: #611111
+xcalc.ti.button25.background: #722222
+xcalc.ti.button30.background: #833333
+xcalc.ti.button35.background: #944444
+xcalc.ti.button40.background: #a55555
+xcalc.ti.button22.background: #222262
+xcalc.ti.button23.background: #222262
+xcalc.ti.button24.background: #222272
+xcalc.ti.button27.background: #333373
+xcalc.ti.button28.background: #333373
+xcalc.ti.button29.background: #333373
+xcalc.ti.button32.background: #444484
+xcalc.ti.button33.background: #444484
+xcalc.ti.button34.background: #444484
+xcalc.ti.button37.background: #555595
+xcalc.ti.button38.background: #555595
+xcalc.ti.button39.background: #555595
+XCalc*Cursor:                 hand2
+XCalc*ShapeStyle:             rectangle
+
+!-------------------------------------------------------------------------------
+!
+!   X M E S S A G E - Setting
+!
+!
+.xmessage.form.okay.shapeStyle: rectangle
+.xmessage.form.okay.background: #777777
+.xmessage.form.okay.foreground: snow
+!xmessage*message*background: snow
+xmessage*defaultButton: okay
+Xmessage.form.message.Scroll:  WhenNeeded
+
