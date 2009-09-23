@@ -68,24 +68,24 @@ urxvt*scrollTtyOutput:   true
 urxvt*scrollTtyKeypress: true
 urxvt*loginShell:        true
 urxvt*font:              xft:Bitstream Vera Sans mono:size=9
-urxvt*foreground:        #cccccc
+urxvt*foreground:        #eeeeee
 urxvt*background:        #191911
 urxvt*saveLines:         10000
 urxvt*inheritPixmap:     true
 urxvt*tintColor:         #aaaaaa
-urxvt*shading:           40
+urxvt*shading:           30
 urxvt*geometry:          84x26
 
 *color0:            #222222
 *color8:            #222222
-*color1:            #803232
-*color9:            #982b2b
-*color2:            #5b762f
-*color10:           #89b83f
+*color1:            #a05252
+*color9:            #b83b3b
+*color2:            #5ba62f
+*color10:           #89c83f
 *color3:            #aa9943
 *color11:           #efef60
-*color4:            #324c80
-*color12:           #2b4f98
+*color4:            #527cb0
+*color12:           #3b6fb8
 *color5:            #706c9a
 *color13:           #826ab1
 *color6:            #92b19e
