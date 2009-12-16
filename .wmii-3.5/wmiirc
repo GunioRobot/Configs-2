@@ -114,11 +114,13 @@ eventstuff() {
 	Key $MODKEY-space
 		wmiir xwrite /tag/sel/ctl select toggle
 	Key $MODKEY-x
-		swkbmap &
+		swkbmap
+	Key XF86AudioMute
+		amixer set Master toggle
 	Key XF86AudioRaiseVolume
-		eval "amixer set Master 1+" &
+		amixer set Master 1+
 	Key XF86AudioLowerVolume
-		eval "amixer set Master 1-" &
+		amixer set Master 1-
 	Key $MODKEY-d
 		wmiir xwrite /tag/sel/ctl colmode sel default
 	Key $MODKEY-s
