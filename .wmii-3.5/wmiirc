@@ -113,6 +113,8 @@ eventstuff() {
 		esac
 	Key $MODKEY-space
 		wmiir xwrite /tag/sel/ctl select toggle
+	Key $MODKEY-Control-l
+		xlock
 	Key $MODKEY-x
 		swkbmap
 	Key XF86AudioMute
