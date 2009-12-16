@@ -208,7 +208,8 @@ progsfile="$WMII_NS_DIR/.proglist"
 Action status &
 proglist $PATH >$progsfile &
 
-xsetroot -solid "$WMII_BACKGROUND" &
+#xsetroot -solid "$WMII_BACKGROUND" &
+eval `cat .fehbg` &
 
 # Setup Tag Bar
 seltag="$(wmiir read /tag/sel/ctl 2>/dev/null)"
