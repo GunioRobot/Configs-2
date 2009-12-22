@@ -110,6 +110,11 @@ else
   set smartindent
 endif
 
+if hlexists("ExtraWhitespace")
+    match ExtraWhitespace /\s\+$/
+endif
+
 set enc=utf-8
 
 map <F2> :sh<Return>
+
