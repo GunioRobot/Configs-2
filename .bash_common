@@ -1,4 +1,6 @@
 # vim: ft=sh
+
+# Define variables for colors
 BLUE='\[\033[01;34m\]'
 GREEN='\[\033[01;32m\]'
 DARK_CYAN='\[\033[00;36m\]'
@@ -7,6 +9,10 @@ WHITE='\[\033[01;37m\]'
 END_COLOR='\[\033[00m\]'
 NO_COLOR='\e[m'
 
+#PS1='[ ${debian_chroot:+($debian_chroot)}'$BLUE'\u@\h'$WHITE':'$GREEN'\W'$LIGHT_GRAY' ]'$DARK_CYAN'$(get_git_branch)'$LIGHT_GRAY'\$ '$NO_COLOR
+
+# If the current dir is part of a git repo,
+# returns the branch and if it's been modified
 function get_git_branch
 {
     changed=''
