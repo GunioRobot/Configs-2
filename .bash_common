@@ -1,0 +1,18 @@
+# vim: ft=sh
+BLUE='\[\033[01;34m\]'
+GREEN='\[\033[01;32m\]'
+DARK_CYAN='\[\033[00;36m\]'
+LIGHT_GRAY='\[\033[00;37m\]'
+WHITE='\[\033[01;37m\]'
+END_COLOR='\[\033[00m\]'
+NO_COLOR='\e[m'
+
+function get_git_branch
+{
+    changed=''
+    ref=`git symbolic-ref HEAD 2>/dev/null` || return
+    branch=${ref#refs/heads/}
+    test `git diff-index HEAD | wc -l` != 0 && changed='! '
+    echo " ($changed$branch)"
+}
+
