@@ -9,7 +9,7 @@ WHITE='\[\033[01;37m\]'
 END_COLOR='\[\033[00m\]'
 NO_COLOR='\e[m'
 
-#PS1='[${debian_chroot:+($debian_chroot)}'$BLUE'\u@\h'$LIGHT_GRAY'] '$GREEN'\W'$DARK_CYAN'$(get_git_branch)'$LIGHT_GRAY'\$ '$NO_COLOR
+#PS1='[${debian_chroot:+($debian_chroot)}'$BLUE'\u@\h'$END_COLOR$LIGHT_GRAY'] '$END_COLOR$GREEN'\W'$END_COLOR$DARK_CYAN'$(get_git_branch)'$END_COLOR$LIGHT_GRAY'\$ '$END_COLOR
 
 # If the current dir is part of a git repo,
 # returns the branch and if it's been modified
