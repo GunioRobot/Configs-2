@@ -16,9 +16,10 @@ NO_COLOR='\e[m'
 function get_git_branch
 {
     changed=''
+    echo -n ' '
     ref=`git symbolic-ref HEAD 2>/dev/null` || return
     branch=${ref#refs/heads/}
-    test `git diff-index HEAD | wc -l` != 0 && changed='! '
-    echo " ($changed$branch)"
+    test `git diff-index HEAD | wc -l` != 0 && changed='!'
+    echo "($branch$changed)"
 }
 
