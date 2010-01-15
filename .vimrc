@@ -17,7 +17,6 @@ if v:version >= 700
 endif
 
 iab teh the
-iab DATE <C-R>=strftime("%B %d, %Y (%A, %H:%Mh)")<CR>
 
 if has('gui_running')
     set columns=90
