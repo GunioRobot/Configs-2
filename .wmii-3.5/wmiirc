@@ -1,5 +1,6 @@
 #!/bin/sh -f
 # Configure wmii
+# vim: noexpandtab
 
 # Configuration Variables
 MODKEY=Mod4
@@ -117,6 +118,8 @@ eventstuff() {
 		xlock
 	Key $MODKEY-x
 		swkbmap
+	Key $MODKEY-z
+		xlock
 	Key XF86AudioMute
 		amixer set Master toggle
 	Key XF86AudioRaiseVolume
@@ -255,4 +258,3 @@ while read event; do
 	Event_$event $@
 done 2>/dev/null
 
-# vim: noexpandtab
