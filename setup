@@ -1,0 +1,16 @@
+#!/bin/bash
+
+CONF_DIR="$HOME/Configs"
+REGEX='^(setup|\.|\.\.|\.git)$'
+
+for FILE in $(ls --color=never -a $CONF_DIR | grep -vE "$REGEX")
+do
+    TARGET_FILE=$HOME/$(echo -n $FILE | sed "s#$CONF_DIR/##")
+    read -p "Link $FILE => $TARGET_FILE? [y/N]: " answer
+    if [ "$answer" = "y" ] || [ "$answer" = "Y" ]
+    then
+        echo "Linking from $FILE to $TARGET_FILE..."
+        ln -s "$FILE" "$TARGET_FILE"
+    fi
+done
+
