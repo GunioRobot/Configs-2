@@ -40,7 +40,9 @@ wmiir write /tagrules <<!
 
 # Status Bar Info
 status() {
-	echo -n $(setxkbmap -print | awk -F"+" '$1 ~ /xkb_symbols/ { print $2 } ') '|' $(uptime | sed 's/.*://; s/,//g') '|' $(date)
+	VOL=$(amixer get Master | tail -1 | sed -r 's_^.+: Playback [0-9]+ \[([0-9]+%)\].+$_\1_')
+	KEYMAP=$(setxkbmap -print | awk -F"+" '$1 ~ /xkb_symbols/ { print $2 } ')
+	echo -n 'Vol' $VOL '|' $KEYMAP '|' $(uptime | sed 's/.*://; s/,//g') '|' $(date)
 }
 
 # Event processing
