@@ -27,7 +27,7 @@ if has('gui_running')
     set guioptions-=T
     set guioptions-=m
     colorscheme myme
-    set guifont=Bitstream\ Vera\ Sans\ Mono\ 10
+    set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
     "set guifont=Monospace
 elseif (&term == 'screen.linux') || (&term =~ '^linux')
     set t_Co=8

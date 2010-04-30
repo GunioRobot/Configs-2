@@ -8,7 +8,7 @@ endif
 
 let colors_name = "myme"
 
-hi Normal ctermfg=7 cterm=none guibg=#10101a guifg=#9999aa gui=none
+hi Normal ctermfg=7 cterm=none guibg=#000000 guifg=#ddddff gui=none
 
 hi Cursor guibg=fg guifg=bg gui=none
 hi CursorColumn guibg=#30303a gui=none
@@ -56,16 +56,16 @@ hi VisualNOS guibg=bg guifg=#c0aa94 gui=bold,underline
 hi WarningMsg guibg=bg guifg=#f07070 gui=none
 hi WildMenu ctermbg=4 ctermfg=7 cterm=bold guibg=fg guifg=bg gui=bold
 
-hi Comment ctermfg=5 guibg=bg guifg=#004477 gui=none
+hi Comment ctermfg=5 guibg=bg guifg=#2277bb gui=none
 hi Constant ctermfg=1 cterm=bold guibg=bg guifg=#d05050 gui=none
 hi Error ctermfg=1 ctermbg=none cterm=bold guibg=bg guifg=#d05050 gui=none
-hi Identifier ctermfg=4 guibg=bg guifg=#7777aa gui=none
+hi Identifier ctermfg=4 guibg=bg guifg=#7777cc gui=none
 hi Ignore guibg=bg guifg=bg gui=none
 hi lCursor guibg=#c0aa94 guifg=bg gui=none
 hi MatchParen guibg=#008b8b gui=none
-hi PreProc ctermfg=5 guibg=bg guifg=#004477 gui=none
+hi PreProc ctermfg=5 guibg=bg guifg=#2277bb gui=none
 hi Special ctermfg=4 guibg=bg guifg=#7777aa gui=none
-hi Statement ctermfg=2 cterm=bold guibg=bg guifg=#337733 gui=bold
+hi Statement ctermfg=2 cterm=bold guibg=bg guifg=#55aa55 gui=bold
 hi Todo guibg=#aed0ae guifg=bg gui=none
 hi Type ctermfg=4 cterm=bold guibg=bg guifg=#4070a0 gui=bold
 hi Underlined ctermfg=3 cterm=bold,underline guibg=bg guifg=#d4b064 gui=underline
