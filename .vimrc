@@ -26,6 +26,11 @@ if has('gui_running')
     set guioptions+=c
     set guioptions-=T
     set guioptions-=m
+    set guioptions-=l
+    set guioptions-=r
+    set guioptions-=b
+    set guioptions-=R
+    set guioptions-=L
     colorscheme myme
     set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
     "set guifont=Monospace
