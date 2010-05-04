@@ -28,9 +28,10 @@ wmiir write /colrules <<!
 !
 
 # Tagging Rules
+
+#/Opera.*/ -> 1
 wmiir write /tagrules <<!
 /Firefox.*/ -> ~
-/Opera.*/ -> 1
 /Buddy List.*/ -> ~
 /XMMS.*/ -> ~
 /MPlayer.*/ -> ~
