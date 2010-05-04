@@ -121,5 +121,6 @@ endif
 set enc=utf-8
 
 map <F2> :sh<Return>
+map <F3> :Tlist<Return>
 map <F9> :!./%<Return>
 

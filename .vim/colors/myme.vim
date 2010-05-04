@@ -24,14 +24,14 @@ hi Folded guibg=#101010 guifg=#c2b680 gui=none
 hi IncSearch guibg=#866a4f guifg=fg gui=none
 hi LineNr ctermfg=4 guibg=bg guifg=#333366 gui=none
 hi ModeMsg guibg=bg guifg=fg gui=bold
-hi MoreMsg guibg=bg guifg=#dabfa5 gui=bold
+hi MoreMsg guibg=bg guifg=fg gui=bold
 hi NonText ctermfg=8 guibg=bg guifg=#9f8f80 gui=bold
 hi Pmenu ctermbg=5 guibg=#30303a guifg=#c0c0da gui=none
 hi PmenuSbar guibg=#B99F86 guifg=fg gui=none
 hi PmenuSel ctermbg=4 guibg=#c0c0da guifg=bg gui=none
 hi PmenuThumb guibg=#a0a0aa guifg=bg gui=none
-hi Question guibg=bg guifg=#dabfa5 gui=bold
-hi Search guibg=#c0aa94 guifg=bg gui=none
+hi Question guibg=bg guifg=#7777cc gui=bold
+hi Search guibg=#20202a guifg=fg gui=none
 hi SignColumn guibg=bg guifg=#7777aa gui=none
 hi SpecialKey guibg=bg guifg=#d4b064 gui=none
 if has("spell")
@@ -45,8 +45,8 @@ hi StatusLineNC ctermbg=0 ctermfg=4 cterm=bold guibg=#20202a guifg=#c0c0da gui=n
 hi TabLine ctermbg=0 ctermfg=7 cterm=bold guibg=#564d43 guifg=#f7f7f1 gui=underline
 hi TabLineFill ctermbg=0 ctermfg=7 cterm=bold guibg=#564d43 guifg=#f7f7f1 gui=underline
 hi TabLineSel ctermbg=4 ctermfg=7 guibg=bg guifg=#f7f7f1 gui=bold
-hi Title ctermbg=0 ctermfg=15 guifg=#f7f7f1 gui=bold
-hi VertSplit ctermbg=7 ctermfg=0 guibg=#564d43 guifg=#f7f7f1 gui=none
+hi Title ctermbg=0 ctermfg=15 guifg=#77aadd gui=bold
+hi VertSplit ctermbg=7 ctermfg=0 guibg=#20202a guifg=#c0c0da gui=none
 if version >= 700
     hi Visual ctermbg=7 ctermfg=0 guibg=#5f5f5f gui=none
 else

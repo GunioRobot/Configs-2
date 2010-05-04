@@ -19,9 +19,10 @@ hi DiffDelete guibg=#8b0000 guifg=fg gui=none
 hi DiffText guibg=#0000cd guifg=fg gui=bold
 hi Directory guibg=bg guifg=#007722 gui=none
 hi ErrorMsg ctermfg=1 ctermbg=none cterm=bold guibg=bg guifg=#f07070 gui=bold
-hi FoldColumn guibg=bg guifg=#c2b680 gui=none
+hi FoldColumn guibg=bg guifg=#006633 gui=none
 hi Folded guibg=#101010 guifg=#c2b680 gui=none
-hi IncSearch guibg=#866a4f guifg=fg gui=none
+hi Search guibg=#ff80a0 guifg=#330011 gui=none
+hi IncSearch guibg=#dd5070 guifg=#110005 gui=none
 hi LineNr ctermfg=4 guibg=bg guifg=#662222 gui=none
 hi ModeMsg guibg=bg guifg=fg gui=bold
 hi MoreMsg guibg=bg guifg=#994466 gui=bold
@@ -30,8 +31,7 @@ hi Pmenu ctermbg=5 guibg=#30303a guifg=#c0c0da gui=none
 hi PmenuSbar guibg=#B99F86 guifg=fg gui=none
 hi PmenuSel ctermbg=4 guibg=#c0c0da guifg=bg gui=none
 hi PmenuThumb guibg=#a0a0aa guifg=bg gui=none
-hi Question guibg=bg guifg=#dabfa5 gui=bold
-hi Search guibg=#c0aa94 guifg=bg gui=none
+hi Question guibg=bg guifg=#007722 gui=bold
 hi SignColumn guibg=bg guifg=#7777aa gui=none
 hi SpecialKey guibg=bg guifg=#336600 gui=none
 if has("spell")
@@ -58,7 +58,7 @@ hi WildMenu ctermbg=4 ctermfg=7 cterm=bold guibg=fg guifg=bg gui=bold
 
 hi Comment ctermfg=5 guibg=bg guifg=#991166 gui=none
 hi Constant ctermfg=1 cterm=bold guibg=bg guifg=#006633 gui=none
-hi Error ctermfg=1 ctermbg=none cterm=bold guibg=bg guifg=#d05050 gui=none
+hi Error ctermfg=1 ctermbg=none cterm=bold guibg=bg guifg=#b03030 gui=none
 hi Identifier ctermfg=4 guibg=bg guifg=#0033aa gui=none
 hi Ignore guibg=bg guifg=bg gui=none
 hi lCursor guibg=#c0aa94 guifg=bg gui=none
@@ -66,7 +66,7 @@ hi MatchParen guibg=#008b8b gui=none
 hi PreProc ctermfg=5 guibg=bg guifg=#2277bb gui=none
 hi Special ctermfg=4 guibg=bg guifg=#7777aa gui=none
 hi Statement ctermfg=2 cterm=bold guibg=bg guifg=#770000 gui=bold
-hi Todo guibg=#aed0ae guifg=bg gui=none
+hi Todo guibg=#55cc77 guifg=fg gui=none
 hi Type ctermfg=4 cterm=bold guibg=bg guifg=#333388 gui=bold
 hi Underlined ctermfg=3 cterm=bold,underline guibg=bg guifg=#336600 gui=underline
 
