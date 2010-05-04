@@ -67,7 +67,7 @@ hi PreProc ctermfg=5 guibg=bg guifg=#2277bb gui=none
 hi Special ctermfg=4 guibg=bg guifg=#7777aa gui=none
 hi Statement ctermfg=2 cterm=bold guibg=bg guifg=#770000 gui=bold
 hi Todo guibg=#55cc77 guifg=fg gui=none
-hi Type ctermfg=4 cterm=bold guibg=bg guifg=#333388 gui=bold
+hi Type ctermfg=4 cterm=bold guibg=bg guifg=#6655aa gui=bold
 hi Underlined ctermfg=3 cterm=bold,underline guibg=bg guifg=#336600 gui=underline
 
 hi htmlBold ctermbg=0 ctermfg=15 guibg=bg guifg=fg gui=bold
