@@ -8,7 +8,7 @@ endif
 
 let colors_name = "myme"
 
-hi Normal ctermfg=7 cterm=none guibg=#ff99bb guifg=#660022 gui=none
+hi Normal ctermfg=7 cterm=none guibg=#ffaacc guifg=#660022 gui=none
 
 hi Cursor guibg=#ffbbcc guifg=fg gui=none
 hi CursorColumn guibg=#30303a gui=none
