@@ -2,11 +2,11 @@
 # Shows the log of a svn path, with the
 # commit message and the diff.
 #
-svnfilelog () {
+svnlog () {
     path=${1:-'.'}
     for rev in `svn log $path | egrep '^r[0-9]+' | cut -d' ' -f1`;
     do
-        svn log -vr $rev $path;
-        svn diff -c $rev $path;
+        svn log -vr $rev $path
+        svn diff -c $rev $path
     done
 }
