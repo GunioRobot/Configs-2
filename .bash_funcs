@@ -4,9 +4,13 @@
 #
 svnlog () {
     path=${1:-'.'}
-    for rev in `svn log $path | egrep '^r[0-9]+' | cut -d' ' -f1`;
+    for rev in `svn log --stop-on-copy $path | egrep '^r[0-9]+' | cut -d' ' -f1`;
     do
         svn log -vr $rev $path
         svn diff -c $rev $path
     done
+}
+
+svndiff () {
+    svn diff $@ | less
 }
