@@ -1,0 +1,1 @@
+omniperl.vba: call delete('/var/www/.vim/ftplugin/perl/omniperl.pl')|call delete('/var/www/.vim/ftplugin/perl/omniperl.vim')|call delete('/var/www/.vim/doc/omniperl.txt')
