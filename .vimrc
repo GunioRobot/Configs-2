@@ -31,18 +31,18 @@ if has('gui_running')
     set guioptions-=b
     set guioptions-=R
     set guioptions-=L
-    colorscheme myme
+    colorscheme darkspectrum
     set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
     "set guifont=Monospace
 elseif (&term == 'screen.linux') || (&term =~ '^linux')
     set t_Co=8
-    colorscheme myme
+    colorscheme darkspectrum
 elseif (&term == 'rxvt-unicode') || (&term =~ '^xterm') || (&term =~ '^screen')
     set mouse=a
     set ttymouse=xterm
-    colorscheme myme
+    colorscheme darkspectrum
 else
-    colorscheme myme
+    colorscheme darkspectrum
 endif
 
 " Options
@@ -113,6 +113,9 @@ if has("autocmd")
 else
   set smartindent
 endif
+
+filetype plugin on
+set ofu=syntaxcomplete#Complete
 
 if hlexists("ExtraWhitespace")
     match ExtraWhitespace /\s\+$/
