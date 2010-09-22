@@ -5,7 +5,7 @@ REGEX='^(setup|\.|\.\.|\.git)$'
 
 for FILE in $(ls --color=never -a $CONF_DIR | grep -vE "$REGEX")
 do
-    TARGET_FILE=$HOME/$(echo -n $FILE | sed "s#$CONF_DIR/##")
+    TARGET_FILE=$HOME/$(echo -n $FILE | sed "s_$CONF_DIR/__")
     read -p "Link $FILE => $TARGET_FILE? [y/N]: " answer
     if [ "$answer" = "y" ] || [ "$answer" = "Y" ]
     then

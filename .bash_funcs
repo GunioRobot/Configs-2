@@ -2,15 +2,16 @@
 # Shows the log of a svn path, with the
 # commit message and the diff.
 #
-svnlog () {
+LOG_LIMIT=10
+svlog () {
     path=${1:-'.'}
-    for rev in `svn log --stop-on-copy $path | egrep '^r[0-9]+' | cut -d' ' -f1`;
+    for rev in `svn log --limit $LOG_LIMIT --stop-on-copy $path | egrep '^r[0-9]+ \|' | cut -d' ' -f1`;
     do
         svn log -vr $rev $path
         svn diff -c $rev $path
     done
 }
 
-svndiff () {
+svd () {
     svn diff $@ | less
 }
