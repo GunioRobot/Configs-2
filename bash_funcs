@@ -8,10 +8,12 @@ svlog () {
     for rev in `svn log --limit $LOG_LIMIT --stop-on-copy $path | egrep '^r[0-9]+ \|' | cut -d' ' -f1`;
     do
         svn log -vr $rev $path
-        svn diff -c $rev $path
+        svn diff --diff-cmd colordiff -c $rev $path
     done
 }
 
 svd () {
-    svn diff $@ | less
+    svn diff --diff-cmd colordiff $@ | less -r
 }
+
+alias svc="svn commit"
