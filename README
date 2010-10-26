@@ -1,0 +1,6 @@
+Myme's config files for all kinds of shell utilities
+====================================================
+
+Run ./setup to manage symlinks to the different programs
+you want to add track your config files
+
