@@ -2,6 +2,9 @@
 " ~postlogic's vimrc
 "   -- with tons of stuff borrowed from all over.
 
+" PATHOGEN
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 "Functions 'n stuff
 
