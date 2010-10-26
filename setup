@@ -10,7 +10,6 @@ bash/bash_funcs  .bash_funcs
 
 # GIT
 git/gitconfig .gitconfig
-git/gitignore .gitignore
 
 # IRSSI
 irssi .irssi
