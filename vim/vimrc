@@ -6,6 +6,9 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+" Status Line
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
 "Functions 'n stuff
 
 if v:progname =~? "evim"
