@@ -12,6 +12,9 @@ bash/bash_funcs  .bash_funcs
 git/gitconfig .gitconfig
 git/gitignore .gitignore
 
+# IRSSI
+irssi .irssi
+
 # SCREEN
 screen/screenrc .screenrc
 
