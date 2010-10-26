@@ -22,6 +22,14 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
+  },
+  {
+    address = "irc.umbranet.org";
+    chatnet = "Umbranet";
+    port = "6667";
+    use_ssl = "no";
+    ssl_verify = "no";
+    autoconnect = "yes";
   }
 );
 
@@ -53,6 +61,15 @@ chatnets = {
     max_msgs = "5";
     max_whois = "1";
   };
+  Umbranet = {
+    type = "IRC";
+    nick = "myme";
+    username = "myme";
+    max_kicks = "4";
+    max_modes = "4";
+    max_msgs = "5";
+    max_whois = "1";
+  };
 };
 
 channels = (
@@ -61,8 +78,18 @@ channels = (
   { name = "#ifi@uio"; chatnet = "EFNet"; autojoin = "yes"; },
   { name = "#perl.no"; chatnet = "EFNet"; autojoin = "yes"; },
   { name = "#ping.uio.no"; chatnet = "IRCNet"; autojoin = "yes"; },
-  { name = "#ifi-core"; chatnet = "IRCnet"; autojoin = "yes"; }
+  { name = "#ifi-core"; chatnet = "IRCnet"; autojoin = "yes"; },
   { name = "#catalyst"; chatnet = "Perl"; autojoin = "yes"; },
+  {
+    name = "#staff";
+    chatnet = "operassl";
+    autojoin = "yes";
+    password = "Le6coomu";
+  },
+  { name = "#myopera"; chatnet = "operassl"; autojoin = "yes"; },
+  { name = "#is"; chatnet = "operassl"; autojoin = "yes"; },
+  { name = "#sysadmin"; chatnet = "operassl"; autojoin = "yes"; },
+  { name = "#djent"; chatnet = "Umbranet"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -242,6 +269,10 @@ settings = {
     theme = "myme";
   };
   "fe-text" = { actlist_sort = "refnum"; };
+  "perl/core/scripts" = {
+    lastfm_user = "myme123";
+    lastfm_output = "%(%user )np: %artist - %name";
+  };
 };
 logs = { };
 keyboard = (
