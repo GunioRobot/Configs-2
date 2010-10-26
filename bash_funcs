@@ -17,3 +17,4 @@ svd () {
 }
 
 alias svc="svn commit"
+alias spg="svn propget"
