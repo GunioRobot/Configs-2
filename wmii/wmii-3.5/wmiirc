@@ -34,6 +34,7 @@ wmiir write /tagrules <<!
 /Firefox.*/ -> ~
 /XMMS.*/ -> ~
 /MPlayer.*/ -> ~
+/spotify.*/ -> spotify
 /.*\.exe:Wine:.*/ -> wine
 /.*/ -> sel
 /.*/ -> 1
