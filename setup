@@ -1,16 +1,112 @@
 #!/bin/bash
 
-CONF_DIR="$HOME/Configs"
-REGEX='^(setup|\.|\.\.|\.git)$'
+CONF_DIR=$(dirname $(readlink -f $0))
 
-for FILE in $(ls --color=never -a $CONF_DIR | grep -vE "$REGEX")
-do
-    TARGET_FILE=$HOME/$(echo -n $FILE | sed "s_$CONF_DIR/__")
-    read -p "Link $FILE => $TARGET_FILE? [y/N]: " answer
-    if [ "$answer" = "y" ] || [ "$answer" = "Y" ]
-    then
-        echo "Linking from $FILE to $TARGET_FILE..."
-        ln -s "$FILE" "$TARGET_FILE"
-    fi
-done
+# Specifies how to install the configurations for a given program
+LINK_CONFIG=$(grep -v '^#' <<EOF
+# BASH
+bash/bash_common .bash_common
+bash/bash_funcs  .bash_funcs
+
+# GIT
+git/gitconfig .gitconfig
+git/gitignore .gitignore
+
+# SCREEN
+screen/screenrc .screenrc
+
+# SSH
+ssh .ssh
+
+# VIM
+vim/vimrc .vimrc
+vim/vim   .vim
+EOF
+)
+
+display_symlinks () {
+    while [ $# -gt 1 ]; do
+        SRC="$CONF_DIR/$1"; DST="$HOME/$2"
+
+        if [ -e "$DST" ]; then
+            if [ -h "$DST" ] && [ `readlink -f "$DST"` == "$SRC" ]; then
+                echo "[SETUP] '$DST' -> '`readlink -f $DST`'"
+            else
+                echo "[EXISTS] '$DST'"
+            fi
+        else
+            echo "[MISSING] '$SRC' -> '$DST'"
+        fi
+
+        shift 2
+    done
+}
+
+remove_symlinks () {
+    while [ $# -gt 1 ]; do
+        SRC="$CONF_DIR/$1"; DST="$HOME/$2"
+
+        if [ -h "$DST" ]; then
+            if [ `readlink -f "$DST"` != "$SRC" ]; then
+                echo "[SKIP] '$DST' doesn't link to '$SRC'"
+            else
+                rm -v "$DST"
+            fi
+        else
+            echo "[SKIP] '$DST' missing or not a symlink"
+        fi
+
+        shift 2
+    done
+}
+
+setup_symlinks () {
+    while [ $# -gt 1 ]; do
+        SRC="$CONF_DIR/$1"; DST="$HOME/$2"
+
+        if [ -e "$DST" ]; then
+            if [ -h "$DST" ] && [ `readlink -f "$DST"` == "$SRC" ]; then
+                echo "[SKIP] '$DST' already correctly setup"
+            else
+                echo "[EXISTS] '$DST' already exists, but doesn't link to the right file"
+            fi
+        else
+            ln -sv "$SRC" "$DST"
+        fi
+
+        shift 2
+    done
+}
+
+show_help () {
+    cat <<EOF
+Usage: setup ( remove | show | setup )
+
+remove:     Deletes all symlinks in the link config
+
+setup:      Creates symlinks to all 
+
+show:       Shows a status of current links
+EOF
+    exit
+}
+
+#
+# Main stuff
+#
+
+case $1 in
+    remove)
+        remove_symlinks $LINK_CONFIG
+        ;;
+    show)
+        display_symlinks $LINK_CONFIG
+        ;;
+    setup)
+        setup_symlinks $LINK_CONFIG
+        ;;
+    *)
+        show_help
+        ;;
+esac
 
