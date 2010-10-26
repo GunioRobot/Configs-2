@@ -80,15 +80,6 @@ channels = (
   { name = "#ping.uio.no"; chatnet = "IRCNet"; autojoin = "yes"; },
   { name = "#ifi-core"; chatnet = "IRCnet"; autojoin = "yes"; },
   { name = "#catalyst"; chatnet = "Perl"; autojoin = "yes"; },
-  {
-    name = "#staff";
-    chatnet = "operassl";
-    autojoin = "yes";
-    password = "Le6coomu";
-  },
-  { name = "#myopera"; chatnet = "operassl"; autojoin = "yes"; },
-  { name = "#is"; chatnet = "operassl"; autojoin = "yes"; },
-  { name = "#sysadmin"; chatnet = "operassl"; autojoin = "yes"; },
   { name = "#djent"; chatnet = "Umbranet"; autojoin = "yes"; }
 );
 
