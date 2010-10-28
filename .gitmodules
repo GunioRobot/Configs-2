@@ -10,3 +10,6 @@
 [submodule "vim/vim/bundle/perl-support"]
 	path = vim/vim/bundle/perl-support
 	url = http://github.com/vim-scripts/perl-support.vim.git
+[submodule "zsh/oh-my-zsh"]
+	path = zsh/oh-my-zsh
+	url = http://github.com/robbyrussell/oh-my-zsh.git
