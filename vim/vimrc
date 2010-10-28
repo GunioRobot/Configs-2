@@ -129,10 +129,18 @@ endif
 
 set enc=utf-8
 
-map <F2> :sh<Return>
-map <F3> :Tlist<Return>
-map <F9> :!./%<Return>
-
 " perl-support variables
 let g:Perl_Support_Root_Dir = $HOME.'/.vim/bundle/perl-support'
+
+" NERD Tree options
+let NERDTreeShowFiles=1
+let NERDTreeShowHidden=1
+let NERDTreeHighlightCursorline=1
+let NERDTreeMouseMode=2
+
+" Key mappings
+map <F2> :sh<Return>
+map <F3> :NERDTreeToggle<Return>
+map <F4> :Tlist<Return>
+map <F9> :!./%<Return>
 
