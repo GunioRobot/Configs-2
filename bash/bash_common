@@ -11,5 +11,9 @@ NO_COLOR='\e[m'
 
 #PS1='[${debian_chroot:+($debian_chroot)}'$BLUE'\u@\h'$END_COLOR$LIGHT_GRAY'] '$END_COLOR$GREEN'\W'$END_COLOR$DARK_CYAN'$(get_git_branch)'$END_COLOR$LIGHT_GRAY'\$ '$END_COLOR
 
+if [ -f ./.bash_funcs ]; then
+    . ./.bash_funcs
+fi
+
 alias scr="screen -dRR"
 
