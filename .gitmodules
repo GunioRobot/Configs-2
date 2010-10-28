@@ -7,3 +7,6 @@
 [submodule "vim/vim/bundle/nerdtree"]
 	path = vim/vim/bundle/nerdtree
 	url = http://github.com/vim-scripts/The-NERD-tree.git
+[submodule "vim/vim/bundle/perl-support"]
+	path = vim/vim/bundle/perl-support
+	url = http://github.com/vim-scripts/perl-support.vim.git

@@ -133,3 +133,6 @@ map <F2> :sh<Return>
 map <F3> :Tlist<Return>
 map <F9> :!./%<Return>
 
+" perl-support variables
+let g:Perl_Support_Root_Dir = $HOME.'/.vim/bundle/perl-support'
+
