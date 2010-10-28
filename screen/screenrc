@@ -1,4 +1,4 @@
-shell -bash
+shell -$SHELL
 shelltitle sh
 activity ""
 bell ""
