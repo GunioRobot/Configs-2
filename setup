@@ -23,6 +23,10 @@ ssh .ssh
 # VIM
 vim/vimrc .vimrc
 vim/vim   .vim
+
+# ZSH
+zsh/oh-my-zsh .oh-my-zsh
+zsh/oh-my-zsh/templates/zshrc.zsh-template .zshrc
 EOF
 )
 
