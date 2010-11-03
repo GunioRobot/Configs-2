@@ -136,6 +136,12 @@ eventstuff() {
 		amixer set Master 1+
 	Key XF86AudioLowerVolume
 		amixer set Master 1-
+	Key XF86AudioPrev
+		control_mediaplayer prev
+	Key XF86AudioPlay
+		control_mediaplayer play
+	Key XF86AudioNext
+		control_mediaplayer next
 	Key $MODKEY-d
 		wmiir xwrite /tag/sel/ctl colmode sel default
 	Key $MODKEY-s
