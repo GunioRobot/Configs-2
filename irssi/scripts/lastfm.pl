@@ -51,7 +51,7 @@ Irssi::settings_add_str("lastfm", "lastfm_user", "");
 # displayed if the tag inside actually exists! Cool, huh!?
 
 #  *) Name is used instead of, the more logical IMO, track since that is what Last.fm reports in their .xml file that we parse.
-Irssi::settings_add_str("lastfm", "lastfm_output", '%(%user is )np: %artist-%name');
+Irssi::settings_add_str("lastfm", "lastfm_output", '%(%user is )np: %artist - %name%( - %spotify)');
 Irssi::settings_add_str("lastfm", "lastfm_output_tab_complete", '');
 
 # If we should use /me instead of /say
@@ -243,6 +243,12 @@ use Irssi;
 use LWP::UserAgent;
 use POSIX;
 
+my $spotify;
+eval {
+  require Net::Spotify;
+  $spotify = Net::Spotify->new();
+};
+
 my $pipe_tag;
 my $api_key = "eba9632ddc908a8fd7ad1200d771beb7";
 my $fields = "(artist|name|album|url|player|user)";
@@ -310,13 +316,25 @@ sub lastfm_nowplaying {
     }
   }
 
+  if (defined $spotify) {
+    $fields =~ s/\)$/|spotify)/;
+    $content = $spotify->search("track", q => "artist:$data{artist} $data{name}");
+    foreach my $line (split /\n/, $content) {
+      if ($line =~ m!<track href="(spotify:track:\w+)">!) {
+        $data{spotify} = $1;
+        last;
+      }
+    }
+  }
+
   print Dumper \%data if DEBUG;
   print Dumper "Output pattern before: $nowplaying" if DEBUG;
-  $nowplaying =~ s/(%\((.*?%(\w+).?)\))/($data{$3} ? $2 : "")/ge;
+  $nowplaying =~ s/%\((.*?%(\w+).*?)\)/($data{$2} ? $1 : "")/ge;
   print Dumper "Output pattern after: $nowplaying" if DEBUG;
   $nowplaying =~ s/%$fields/$data{$1}/ge;
   decode_entities($nowplaying);
   Encode::from_to($nowplaying, "utf-8", Irssi::settings_get_str("term_charset"));
+
   return $nowplaying;
 }
 
