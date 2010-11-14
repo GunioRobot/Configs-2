@@ -16,3 +16,6 @@
 [submodule "vim/vim/bundle/taglist"]
 	path = vim/vim/bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "vim/vim/bundle/javacomplete"]
+	path = vim/vim/bundle/javacomplete
+	url = https://github.com/vim-scripts/javacomplete.git
