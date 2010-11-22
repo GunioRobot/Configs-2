@@ -1,3 +1,11 @@
+#
+# Private
+#
+
+Host djent
+    HostName djent.myme.no
+    User myme
+
 Host beate
     HostName beate.gotdns.com
     User myme
