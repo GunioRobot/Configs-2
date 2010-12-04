@@ -144,3 +144,6 @@ map <F3> :NERDTreeToggle<Return>
 map <F4> :Tlist<Return>
 map <F9> :!./%<Return>
 
+set exrc
+set secure
+
