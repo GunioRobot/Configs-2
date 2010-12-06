@@ -139,9 +139,10 @@ let NERDTreeHighlightCursorline=1
 let NERDTreeMouseMode=2
 
 " Key mappings
-map <F2> :sh<Return>
+map <F2> :Project<Return>
 map <F3> :NERDTreeToggle<Return>
 map <F4> :Tlist<Return>
+map <F5> :sh<Return>
 map <F9> :!./%<Return>
 
 set exrc
