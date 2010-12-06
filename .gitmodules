@@ -19,3 +19,6 @@
 [submodule "vim/vim/bundle/javacomplete"]
 	path = vim/vim/bundle/javacomplete
 	url = https://github.com/vim-scripts/javacomplete.git
+[submodule "vim/vim/bundle/project"]
+	path = vim/vim/bundle/project
+	url = https://github.com/vim-scripts/project.tar.gz.git
