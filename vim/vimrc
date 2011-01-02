@@ -145,6 +145,9 @@ map <F4> :Tlist<Return>
 map <F5> :sh<Return>
 map <F9> :!./%<Return>
 
+" Tabs + tags
+nmap <Leader>t <C-w><C-]><C-w>T
+
 set exrc
 set secure
 
