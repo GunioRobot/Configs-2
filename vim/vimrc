@@ -146,7 +146,7 @@ map <F5> :sh<Return>
 map <F9> :!./%<Return>
 
 " Custom tags
-setlocal tags+=~/.tags/perltags
+set tags+=~/.tags/perltags
 
 " Tabs + tags
 nmap <Leader>t <C-w><C-]><C-w>T
