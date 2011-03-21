@@ -34,7 +34,8 @@ wmiir write /tagrules <<!
 /Firefox.*/ -> ~
 /XMMS.*/ -> ~
 /MPlayer.*/ -> ~
-/spotify.*/ -> spotify
+/rhythmbox.*/ -> music
+/spotify.*/ -> music
 /.*\.exe:Wine:.*/ -> wine
 /.*/ -> sel
 /.*/ -> 1
@@ -139,7 +140,7 @@ eventstuff() {
 	Key XF86AudioPrev
 		control_mediaplayer prev
 	Key XF86AudioPlay
-		control_mediaplayer play
+		control_mediaplayer pause
 	Key XF86AudioNext
 		control_mediaplayer next
 	Key $MODKEY-d
