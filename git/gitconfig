@@ -23,6 +23,6 @@
     ci = commit
     st = status
     br = branch
-    # hist = log --pretty=format:\"%C(yellow)%h %Cgreen%ad %Creset| %s%d [%an]\" --graph --date=short
     hist = log --pretty=format:\"%C(yellow)%h %Cgreen%ad %Creset%s%C(yellow)%d %Creset[%C(cyan)%an%Creset]\" --graph --date=short
-	ff = merge --ff-only @{u}
+    ff = merge --ff-only @{u}
+    track = !git branch --set-upstream $(git for-each-ref --format=\"%(refname:short)\" $(git symbolic-ref HEAD))
