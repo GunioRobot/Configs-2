@@ -25,3 +25,6 @@
 [submodule "vim/vim/bundle/cscope_macros"]
 	path = vim/vim/bundle/cscope_macros
 	url = git://github.com/vim-scripts/cscope_macros.vim.git
+[submodule "vim/vim/bundle/gitv"]
+	path = vim/vim/bundle/gitv
+	url = https://github.com/gregsexton/gitv.git
