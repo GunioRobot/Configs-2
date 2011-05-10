@@ -22,6 +22,7 @@
     co = checkout
     ci = commit
     st = status
+    sm = submodule
     br = branch
     hist = log --pretty=format:\"%C(yellow)%h %Cgreen%ad %Creset%s%C(yellow)%d %Creset[%C(cyan)%an%Creset]\" --graph --date=short
     ff = merge --ff-only @{u}
