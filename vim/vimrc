@@ -130,7 +130,7 @@ endif
 set enc=utf-8
 
 " perl-support variables
-let g:Perl_Support_Root_Dir = $HOME.'/.vim/bundle/perl-support'
+let g:Perl_LocalTemplateFile  = $HOME.'/.vim/bundle/perl-support/perl-support/templates/Templates'
 
 " NERD Tree options
 let NERDTreeShowFiles=1
