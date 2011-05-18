@@ -14,6 +14,9 @@ git/gitconfig .gitconfig
 # IRSSI
 irssi .irssi
 
+# PERL
+perl/re.pl .re.pl
+
 # SCREEN
 screen/screenrc .screenrc
 
