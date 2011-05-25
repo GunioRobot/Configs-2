@@ -1,6 +1,8 @@
 [user]
     email = myrseth@gmail.com
     name  = Martin Øinæs Myrseth
+[core]
+    editor = vim
 [color]
     diff = auto
     status = auto

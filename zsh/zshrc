@@ -18,9 +18,17 @@ export ZSH_THEME="myme"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git ssh-agent screen)
 
+export PATH=$HOME/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
 # Aliases
 alias perltags="ctags -f tags --recurse --totals --exclude=blib --exclude=.svn --exclude=.git --exclude='.*.sw*' --extra=q --languages=Perl --langmap=Perl:+.t"
+
+alias ga="git add"
+alias gb="git br"
+alias gd="git diff"
+alias gup="git remote update"
+alias gff="git ff"
+alias ghi="git hist"
