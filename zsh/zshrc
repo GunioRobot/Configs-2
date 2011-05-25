@@ -24,6 +24,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 # Aliases
+alias cctags="ctags -f tags --recurse --totals --exclude=blib --exclude=.svn --exclude=.git --exclude='.*.sw*' --extra=q --languages=C"
 alias perltags="ctags -f tags --recurse --totals --exclude=blib --exclude=.svn --exclude=.git --exclude='.*.sw*' --extra=q --languages=Perl --langmap=Perl:+.t"
 
 alias ga="git add"
