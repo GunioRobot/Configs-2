@@ -30,6 +30,7 @@ alias perltags="ctags -f tags --recurse --totals --exclude=blib --exclude=.svn -
 alias ga="git add"
 alias gb="git br"
 alias gd="git diff"
+alias gco="git co"
 alias gup="git remote update"
 alias gff="git ff"
 alias ghi="git hist"
