@@ -31,3 +31,6 @@
 [submodule "vim/vim/bundle/vimtodo"]
 	path = vim/vim/bundle/vimtodo
 	url = https://github.com/mivok/vimtodo.git
+[submodule "vim/vim/bundle/zencoding"]
+	path = vim/vim/bundle/zencoding
+	url = http://github.com/mattn/zencoding-vim/
