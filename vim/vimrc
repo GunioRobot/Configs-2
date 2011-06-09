@@ -131,6 +131,7 @@ set enc=utf-8
 
 " perl-support variables
 let g:Perl_LocalTemplateFile  = $HOME.'/.vim/bundle/perl-support/perl-support/templates/Templates'
+let g:Perl_PerlTags           = 'disabled'
 
 " NERD Tree options
 let NERDTreeShowFiles=1
@@ -139,7 +140,7 @@ let NERDTreeHighlightCursorline=1
 let NERDTreeMouseMode=2
 
 " Key mappings
-map <F2> :Project<Return>
+map <F2> :Gitv<Return>
 map <F3> :NERDTreeToggle<Return>
 map <F4> :Tlist<Return>
 map <F5> :sh<Return>

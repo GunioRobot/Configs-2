@@ -3,6 +3,8 @@
     name  = Martin Øinæs Myrseth
 [core]
     editor = vim
+[rerere]
+    enabled = true
 [color]
     diff = auto
     status = auto
@@ -20,6 +22,8 @@
     added = yellow
     changed = green
     untracked = cyan
+[merge]
+    tool = vimdiff
 [alias]
     co = checkout
     ci = commit
