@@ -146,6 +146,12 @@ map <F4> :Tlist<Return>
 map <F5> :sh<Return>
 map <F9> :!./%<Return>
 
+" Gitv + Fugitive launch mappings
+nmap <Leader>gl   :Gitv<Return>
+nmap <Leader>gf   :Gitv!<Return>
+nmap <Leader>gst  :Gst<Return>
+nmap <Leader>gd   :Gdiff<Return>
+
 " Custom tags
 set tags+=~/.tags/perltags
 
