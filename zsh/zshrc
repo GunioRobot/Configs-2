@@ -26,6 +26,7 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias cctags="ctags -f tags --recurse --totals --exclude=blib --exclude=.svn --exclude=.git --exclude='.*.sw*' --extra=q --languages=C"
 alias perltags="ctags -f tags --recurse --totals --exclude=blib --exclude=.svn --exclude=.git --exclude='.*.sw*' --extra=q --languages=Perl --langmap=Perl:+.t"
+alias jtags="ctags -f tags --recurse --totals --exclude=blib --exclude=.svn --exclude=.git --exclude='.*.sw*' --extra=q --languages=Java"
 
 alias ga="git add"
 alias gb="git br"
