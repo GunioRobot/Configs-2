@@ -34,3 +34,6 @@
 [submodule "vim/vim/bundle/zencoding"]
 	path = vim/vim/bundle/zencoding
 	url = http://github.com/mattn/zencoding-vim/
+[submodule "vim/vim/bundle/vimclojure"]
+	path = vim/vim/bundle/vimclojure
+	url = https://github.com/vim-scripts/VimClojure.git
