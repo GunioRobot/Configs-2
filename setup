@@ -27,6 +27,9 @@ ssh .ssh
 vim/vimrc .vimrc
 vim/vim   .vim
 
+# X11
+X11/Xdefaults .Xdefaults
+
 # ZSH
 zsh/oh-my-zsh .oh-my-zsh
 zsh/zshrc     .zshrc
