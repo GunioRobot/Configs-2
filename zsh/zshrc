@@ -41,3 +41,6 @@ alias m="make"
 alias scr='screen -dRR'
 
 zle_highlight=(isearch:fg=green,bold)
+
+# Load perlbrew if installed
+[ -f ~/perl5/perlbrew/etc/bashrc ] && source ~/perl5/perlbrew/etc/bashrc
