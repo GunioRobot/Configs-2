@@ -5,6 +5,8 @@
     editor = vim
 [rerere]
     enabled = true
+[init]
+    templatedir = ~/.gittemplate
 [color]
     diff = auto
     status = auto
