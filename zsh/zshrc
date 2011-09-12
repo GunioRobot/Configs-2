@@ -28,6 +28,7 @@ alias cctags="ctags -f tags --recurse --totals --exclude=blib --exclude=.svn --e
 alias perltags="ctags -f tags --recurse --totals --exclude=blib --exclude=.svn --exclude=.git --exclude='.*.sw*' --extra=q --languages=Perl --langmap=Perl:+.t"
 alias jtags="ctags -f tags --recurse --totals --exclude=blib --exclude=.svn --exclude=.git --exclude='.*.sw*' --extra=q --languages=Java"
 
+alias gst="git status -s"
 alias ga="git add"
 alias gb="git br"
 alias gd="git diff"
