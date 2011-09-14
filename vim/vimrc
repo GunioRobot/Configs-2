@@ -42,12 +42,12 @@ if has('gui_running')
     "set guifont=Monospace
 elseif (&term == 'screen.linux') || (&term =~ '^linux')
     set t_Co=256
-    colorscheme desert256
+    colorscheme railscasts
 elseif (&term == 'rxvt-unicode') || (&term =~ '^xterm') || (&term =~ '^screen')
     set t_Co=256
     set mouse=a
     set ttymouse=xterm
-    colorscheme desert256
+    colorscheme railscasts
 else
     colorscheme darkspectrum
 endif
