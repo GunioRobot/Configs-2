@@ -41,12 +41,13 @@ if has('gui_running')
     set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
     "set guifont=Monospace
 elseif (&term == 'screen.linux') || (&term =~ '^linux')
-    set t_Co=8
-    colorscheme darkspectrum
+    set t_Co=256
+    colorscheme desert256
 elseif (&term == 'rxvt-unicode') || (&term =~ '^xterm') || (&term =~ '^screen')
+    set t_Co=256
     set mouse=a
     set ttymouse=xterm
-    colorscheme darkspectrum
+    colorscheme desert256
 else
     colorscheme darkspectrum
 endif
@@ -151,6 +152,7 @@ nmap <Leader>gl   :Gitv<Return>
 nmap <Leader>gf   :Gitv!<Return>
 nmap <Leader>gst  :Gst<Return>
 nmap <Leader>gd   :Gdiff<Return>
+nmap <Leader>gb   :Gblame<Return>
 
 " Custom tags
 set tags+=~/.tags/perltags

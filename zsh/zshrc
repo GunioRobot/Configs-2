@@ -16,7 +16,7 @@ export ZSH_THEME="myme"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ssh-agent)
+plugins=(git git-flow ssh-agent)
 
 export PATH=$HOME/bin:$PATH
 source $ZSH/oh-my-zsh.sh
