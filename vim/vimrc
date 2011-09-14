@@ -45,6 +45,7 @@ elseif (&term == 'screen.linux') || (&term =~ '^linux')
     colorscheme railscasts
 elseif (&term == 'rxvt-unicode') || (&term =~ '^xterm') || (&term =~ '^screen')
     set t_Co=256
+
     set mouse=a
     set ttymouse=xterm
     colorscheme railscasts
@@ -155,6 +156,7 @@ nmap <Leader>gf   :Gitv!<Return>
 nmap <Leader>gst  :Gst<Return>
 nmap <Leader>gd   :Gdiff<Return>
 nmap <Leader>gb   :Gblame<Return>
+nmap <Leader>gp   :Git push<Return>
 
 " Custom tags
 set tags+=~/.tags/perltags
