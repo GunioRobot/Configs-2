@@ -147,6 +147,8 @@ map <F4> :Tlist<Return>
 map <F5> :sh<Return>
 map <F9> :!./%<Return>
 
+nmap <Leader>nt   :NERDTreeToggle<Return>
+
 " Gitv + Fugitive launch mappings
 nmap <Leader>gl   :Gitv<Return>
 nmap <Leader>gf   :Gitv!<Return>
