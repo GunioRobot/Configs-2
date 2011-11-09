@@ -76,7 +76,7 @@ map Q gq
 
 " Folding
 if has("folding")
-"    set foldenable
+    set foldenable
     set nofoldenable
     set foldmethod=indent
     set foldlevel=1
@@ -148,15 +148,22 @@ map <F4> :Tlist<Return>
 map <F5> :sh<Return>
 map <F9> :!./%<Return>
 
+" NERDTree
 nmap <Leader>nt   :NERDTreeToggle<Return>
+
+" Shell
+map <Leader>sh :sh<Return>
 
 " Gitv + Fugitive launch mappings
 nmap <Leader>gl   :Gitv<Return>
+nmap <Leader>gL   :Gitv --all<Return>
 nmap <Leader>gf   :Gitv!<Return>
+nmap <Leader>gF   :Gitv! --all<Return>
 nmap <Leader>gst  :Gst<Return>
 nmap <Leader>gd   :Gdiff<Return>
 nmap <Leader>gb   :Gblame<Return>
 nmap <Leader>gp   :Git push<Return>
+nmap <Leader>gP   :Git push -f<Return>
 
 " Custom tags
 set tags+=~/.tags/perltags
