@@ -164,6 +164,7 @@ nmap <Leader>gd   :Gdiff<Return>
 nmap <Leader>gb   :Gblame<Return>
 nmap <Leader>gp   :Git push<Return>
 nmap <Leader>gP   :Git push -f<Return>
+nmap <Leader>gup  :Git remote update<Return>
 
 " Custom tags
 set tags+=~/.tags/perltags
