@@ -31,6 +31,9 @@ vim/vim   .vim
 # X11
 X11/Xdefaults .Xdefaults
 
+# xmonad
+xmonad/xmonad.hs .xmonad/xmonad.hs
+
 # ZSH
 zsh/oh-my-zsh .oh-my-zsh
 zsh/zshrc     .zshrc
