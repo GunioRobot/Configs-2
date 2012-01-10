@@ -38,6 +38,7 @@ alias gup="git remote update"
 alias grup="git rebase @{u}"
 alias gff="git ff"
 alias ghi="git hist"
+alias ghia="git hist --all"
 alias m="make"
 alias scr='screen -dRR'
 
