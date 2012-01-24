@@ -8,6 +8,9 @@ LINK_CONFIG=$(grep -v '^#' <<EOF
 bash/bash_common .bash_common
 bash/bash_funcs  .bash_funcs
 
+# CTags
+ctags/ctags .ctags
+
 # GIT
 git/gitconfig .gitconfig
 git/gittemplate .gittemplate
